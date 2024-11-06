@@ -35,30 +35,44 @@ const Signup1 = () => {
     };
 
     // Function to handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-
+        
         const signupData = {
-            name: formData.name,
-            age: formData.age,
-            phone: formData.phone,
-            email: formData.email,
-            gender: formData.gender,
-            password: formData.password,
-            isRetailer: formData.isRetailer ? 'yes' : 'no',
-            retailerDetails: formData.isRetailer ? {
-                storeName: formData.storeName,
-                address: formData.address,
-                aadhaarNo: formData.aadhaarNo,
-                profession: formData.profession
-            } : {}
+          name: formData.name,
+          age: formData.age,
+          phone: formData.phone,
+          email: formData.email,
+          gender: formData.gender,
+          password: formData.password,
+          isRetailer: formData.isRetailer,
+          retailerDetails: formData.isRetailer ? {
+            storeName: formData.storeName,
+            address: formData.address,
+            aadhaarNo: formData.aadhaarNo,
+            profession: formData.profession
+          } : {}
         };
-
-        console.log(signupData);
-
-        // Redirect to login page (adjust route as needed)
-        window.location.href = "/login";
-    };
+      
+        try {
+          const response = await fetch('http://localhost:5000/signup', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(signupData)
+          });
+      
+          const data = await response.json();
+          console.log(data.message);
+          if (response.ok) {
+            window.location.href = "/login";
+          }
+        } catch (error) {
+          console.error('Error:', error);
+        }
+      };
+      
 
     return (
         <div className="form">
