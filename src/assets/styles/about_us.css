@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: skyblue;
+    background-color: rgba(252, 3, 3, 0.2); /* Red color with 50% transparency */
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
@@ -26,10 +26,12 @@ header {
     z-index: 20;
 }
 
+
 .header-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    color:aliceblue;
     width: 100%;
     position: relative;
 }
@@ -37,7 +39,7 @@ header {
 h1 {
     font-size: 24px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .icons {
@@ -80,7 +82,7 @@ h1 {
 
 .profile h2 {
     font-size: 18px;
-    color: black;
+    color: white;
     font-weight: bold;
     margin-top: 10px;
     font-style: italic;
@@ -110,7 +112,7 @@ h1 {
 
 footer {
     width: 100vw;
-    background-color: black;
+    background-color:transparent;
     z-index: 10;
     color: white;
     padding: 20px 0;
