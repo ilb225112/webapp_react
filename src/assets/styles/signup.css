@@ -1,4 +1,26 @@
+*{
+    color:white;
+    font-size: 0.98em;;
+}
+a{
+    color:rgb(237, 145, 8);
+}
+a:hover{
+    color:greenyellow;
+}
+
+legend{
+    color:rgb(19, 238, 231);
+    font-size: 0.95 em;
+}
+
+
 body {
+    background: url("../images/bg2.jpg") center/cover fixed no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     margin: 0px;
@@ -53,6 +75,17 @@ body {
     max-height: 506.75px;
 }
 
+input:focus{
+    box-shadow: 0 0 10px yellow;
+}
+
+textarea{
+    background-color: transparent;
+}
+
+::placeholder{
+    color:rgb(163, 162, 70);
+}
 
 #fieldset-retailer {
     display: grid;
@@ -72,7 +105,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background-color: rgba(54, 66, 240, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +128,7 @@ body {
 
 fieldset {
     border: 2px solid #ccc;
-    background-color: #f9f9f9;
+    background-color: rgba(28, 128, 234, 0.2);
     margin: 0 10px;
     padding: 19px;
     border-radius: 3%;
@@ -118,11 +151,24 @@ fieldset {
 input, select {
     width: 100%;
     padding: 8px;
+    background-color: transparent;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+select option {
+    background-color : rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    border-color: #2307f9; /* Green border when focused */
+    box-shadow: 0 0 10px rgba(220, 220, 8, 0.7); /* Glowing effect */
+}
+select option {
+    color: black; /* Text color for options */
+    padding: 10px; /* Padding inside the options */
+}
 
 .switch-container {
     display: flex;
@@ -193,3 +239,7 @@ span {
     font-weight: normal; 
 }
 
+input :focus{
+    border-color:rgb(252, 26, 26);
+    box-shadow: 0 0 10px rgb(79, 52, 126);
+}

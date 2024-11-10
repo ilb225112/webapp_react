@@ -5,7 +5,6 @@ body {
     align-items: center;
     height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black!important;
     background: url("../images/bg1.jpg") center/cover fixed no-repeat;
     background-position: center;
     background-size: cover;
