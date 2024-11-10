@@ -6,27 +6,38 @@ body {
     height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: black!important;
+    background: url("../images/bg1.jpg") center/cover fixed no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h2{
+    color:bisque
 }
 
 .login-container {
-    background-color: white;
+    background-color: rgba(65, 32, 184, 0.2);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px greenyellow;
+    box-shadow: 10px 5px 5px rgb(18, 21, 12);
     text-align: center;
     width: 300px;
+    height:250px;
+    padding: 10%;
 }
 
 #logo{
     width: 100px;
     height: 100px;
-    border-radius: 50% 5% 50% 50%; /*left-top then clockwise*/
+    border-radius: 50% 50% 50% 50%; /*left-top then clockwise*/
     background-color: #08ddfe;
-    box-shadow: 10px 5px 5px yellow;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
     object-fit: cover; 
     position: absolute;
     top:10%;
-    left:43%;
+    left:45%;
     object-fit: cover;
 }
 
@@ -42,24 +53,25 @@ button {
     width: 100%;
     padding: 10px;
     margin:6px;
-    background-color: #28a745;
+    background-color: #ce760a;
+    width:210px;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     position:relative;
-    left:0.5%;
 }
+
 button:hover {
-    background-color: #45fa04;
+    background-color: #fa5e04;
     border-radius: 10px;
-    width: 95%;
+    border-bottom: 5px solid black;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus{
     border-color:yellow;
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 10px rgb(79, 52, 126);
 }
 
 #signUp:hover{
