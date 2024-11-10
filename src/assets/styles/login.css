@@ -28,8 +28,8 @@ h2{
 }
 
 #logo{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50% 50% 50% 50%; /*left-top then clockwise*/
     background-color: #08ddfe;
     box-shadow: 10px 5px 5px rgb(0, 0, 0);

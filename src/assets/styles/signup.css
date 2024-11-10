@@ -64,6 +64,8 @@ body {
 
 #signUpButton:hover {
     background-color: #0cea17; 
+    color:black;
+    font-weight:bold;
 }
 
 #retailer-details{
