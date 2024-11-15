@@ -6,7 +6,7 @@
   <title>Domain Selection</title>
   <link rel="stylesheet" href="../assets/styles/retailer_details1.css">
   <style>
-    .header-section {
+    #header-section {
       background-color: #f0f0f0;
       padding: 15px;
       text-align: center;
@@ -47,7 +47,7 @@
     }
     
 
-    .page2, .page3{
+    #page2, #page3{
       padding: 15px;
       margin: 5px;
       text-align:left;
@@ -158,7 +158,7 @@
 
 
 
-    .details-content {
+    #details-content1 {
       padding: 15px;
       background-color: #333;
       color: #00ff00;
@@ -203,7 +203,7 @@
   </style>
 </head>
 <body>
-  <div class="header-section">
+  <div id="header-section">
     <h2>Event Management</h2>
     <div class="progress-bar">
       <div class="step active" data-step="1">1</div>
@@ -253,7 +253,7 @@
 
 
     <!-- Details Section -->
-    <div class="details-content" id="details-content">Select a domain to view details here</div>
+    <div id="details-content1" id="details-content">Select a domain to view details here</div>
 
   </div>
   <button class="navigation-btn" style="display: block" onclick="markStepCompleted()">Next</button>
@@ -264,7 +264,7 @@
       <!-- Step 2: Bank Information -->
       <div class="step-content" id="step-2" style="display: none;">
         <p>Please enter your bank details</p>
-        <fieldset class="page2">
+        <fieldset id="page2">
         <label>Account Number:</label>
         <input type="text" id="account-number" placeholder="Enter your account number">
         <br><br>
@@ -277,7 +277,7 @@
       <!-- Step 3: Experience and Files -->
       <div class="step-content" id="step-3" style="display: none;">
         <p>Share your experience and previous work</p>
-        <fieldset class="page3">
+        <fieldset id="page3">
         <label>Experience in the field:</label>
         <input type="number" id="experience" placeholder="Number of years">
         <br><br>

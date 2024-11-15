@@ -4,7 +4,7 @@ import Home1 from './pages/Home1';
 import Login1 from './pages/Login1';
 import Signup1 from './pages/Signup1';
 import AboutUs from './pages/aboutus';
-import Dashboard from "./pages/Dashboard";
+import Dashboard from './pages/Dashboard';
 
 const App = () => {
     return (
